@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.grid-container{
+    background-color: rgba(119, 136, 153, 0.827);
+    width: 100%;
+    height: 100vh;
+    display: grid;
+
+    grid-template-columns: 120px auto ;
+    grid-template-rows:  120px auto 90px ;
+}
+.navbar{
+    background-color: rgb(17, 15, 20);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: xxx-large;
+    color: white;
+    
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.item1{
+    background-color: rgba(218, 185, 86, 0.297);
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.item2{
+    background-color: white;
+}
+
+
+.item3{
+    background-color:  rgb(10, 10, 12) ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:sans-serif;
+    font-size: 24px;
+   
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.item2 div{
+    grid-column-start: 1;
+    grid-column-start: 2;
+}
+.item2 h1{
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.item2 p{
+    margin: 15px;
+    font-family: calibri;
+    font-size: 20px;
+}
+.item1 ul{
+    padding: 7px;
+}
+.item1 a{
+    color: rgb(17, 16, 15);
+}
+.item1 ul li{
+    padding: 2px;
+}
+li:hover{
+    background-color: grey;
+}
+@media only screen and (max-width: 500px){
+    .grid-container{
+        background-color: rgba(119, 136, 153, 0.827);
+        width: 100%;
+        height: 200vh;
+
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 100px auto 80px;
+    }
+    .navbar{
+        background-color: rgb(17, 15, 20);
+        grid-row-start: 1;
+        grid-column-end: 2;
+    }
+    .item1{
+        background-color: rgba(218, 185, 86, 0.297);
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .item2{
+        background-color: white;
+    }
+    .item3{
+        background-color:  rgb(10, 10, 12) ;
+        grid-column: 1/2;
+
+    }
+
+}
+
